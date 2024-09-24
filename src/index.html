@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Donate Bangladesh</title>
   </head>
-  <body class="font-lexend">
+  <body class="font-lexend box-border">
     <header class="" >
       <div class="navbar flex justify-between bg-base-100 text-xl max-w-page mx-auto">
         <div class="navbar-start hidden md:flex w-auto">
@@ -39,8 +39,65 @@
         <button class="btn btn-primary btn-outline w-24">History</button>
       </div>
       <!-- Donation forms -->
-      <div class="flex flex-col gap-8 w-full max-w-page mx-auto bg-red-100 h-12">
-
+      <div class=" flex-col gap-8 w-full max-w-page mx-auto flex">
+        <!-- Noakhali -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 border rounded-lg">
+          <div class="overflow-hidden">
+            <img class="min-w-full h-full" src="./assets/images/noakhali.png" alt="noakhali-flood">
+          </div>
+          <div class="flex flex-col justify-between gap-4">
+            <div class="flex flex-col gap-4">
+              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <h6 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h6>
+              <p class="text-base-content">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            </div>
+            <form class="w-full flex flex-col gap-2" action="">
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <input class="btn btn-primary btn-block" type="submit">
+            </form>
+          </div>
+        </div>
+        <!-- Feni -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 border rounded-lg">
+          <div class="overflow-hidden">
+            <img class="min-w-full h-full" src="./assets/images/feni.png" alt="noakhali-flood">
+          </div>
+          <div class="flex flex-col justify-between gap-4">
+            <div class="flex flex-col gap-4">
+              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <h6 class="text-xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h6>
+              <p class="text-base-content">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            </div>
+            <form class="w-full flex flex-col gap-2" action="">
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <input class="btn btn-primary btn-block" type="submit">
+            </form>
+          </div>
+        </div>
+        <!-- Quota movement -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 border rounded-lg">
+          <div class="overflow-hidden">
+            <img class="min-w-full h-full" src="./assets/images/quota-protest.png" alt="noakhali-flood">
+          </div>
+          <div class="flex flex-col justify-between gap-4">
+            <div class="flex flex-col gap-4">
+              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <h6 class="text-xl font-bold">Aid for Injured in the Quota Movement</h6>
+              <p class="text-base-content">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            </div>
+            <form class="w-full flex flex-col gap-2" action="">
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <input class="btn btn-primary btn-block" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- History -->
+      <div class="max-w-page mx-auto">
+        <div class="gap-8 p-8 border rounded-xl">
+          <h6 class="text-xl font-bold">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h6>
+          <p class="text-base font-light">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+        </div>
       </div>
     </main>
   </body>
