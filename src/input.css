@@ -1,10 +1,15 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
     @font-face {
         font-family: 'Lexend';
         src: url(../../src/assets/fonts/Lexend-VariableFont_wght.ttf);
     }
+
+    h1 {
+        @apply text-5xl;
+    }
 }
+
+@tailwind components;
+@tailwind utilities;
+

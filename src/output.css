@@ -204,7 +204,9 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
-h1,
+h1 {
+  font-size: 48px;
+}
 h2,
 h3,
 h4,
@@ -3327,6 +3329,14 @@ details.collapse summary::-webkit-details-marker {
 
 .collapse {
   visibility: collapse;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .z-\[1\] {

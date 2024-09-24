@@ -5,6 +5,10 @@ module.exports = {
     fontFamily: {
       'lexend': 'Lexend',
     },
+
+    fontSize: {
+      '5xl': '48px'
+    },
     
     extend: {
       maxWidth: {
