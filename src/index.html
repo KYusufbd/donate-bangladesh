@@ -26,15 +26,15 @@
         <div class="navbar-end w-auto">
           <div class="stats">
             <div class="stat">
-              <div class="stat-value flex flex-row gap-2 text-xl font-medium"><img class="h-7" src="./assets/icons/coin.png" alt="">89,400 BDT</div>
+              <div id="current-balance" class="stat-value flex flex-row gap-2 text-xl font-medium"><img class="h-7" src="./assets/icons/coin.png" alt="">89400 BDT</div>
             </div>
           </div>
         </div>
       </div>
       <!-- Routing Buttons -->
       <div class="bg-base-100 w-full flex justify-center gap-4 mx-auto backdrop-blur-md bg-opacity-75">
-        <button class="btn btn-primary w-24">Donation</button>
-        <button class="btn btn-primary btn-outline w-24">History</button>
+        <button id="donation-page" class="btn btn-primary w-24">Donation</button>
+        <button id="history-page" class="btn btn-primary btn-outline w-24">History</button>
       </div>
     </header>
     <main class="flex flex-col gap-8 pt-36">
@@ -47,13 +47,14 @@
           </div>
           <div class="flex flex-col justify-between gap-4">
             <div class="flex flex-col gap-4">
-              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <button id="donated-noakhali" class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
               <h6 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h6>
               <p class="text-base-content">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             </div>
             <form class="w-full flex flex-col gap-2" action="">
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-              <input class="btn btn-primary btn-block" type="submit">
+              <input type="text" id="donation-for-noakhali" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <button id="donate-noakhali" class="btn btn-primary btn-block text-xl">Donate Now</button>
+              <!-- <input class="btn btn-primary btn-block" type="submit"> -->
             </form>
           </div>
         </div>
@@ -64,13 +65,14 @@
           </div>
           <div class="flex flex-col justify-between gap-4">
             <div class="flex flex-col gap-4">
-              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <button id="donated-feni" class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
               <h6 class="text-xl font-bold">Donate for Flood Relief in Feni, Bangladesh</h6>
               <p class="text-base-content">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
             </div>
             <form class="w-full flex flex-col gap-2" action="">
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-              <input class="btn btn-primary btn-block" type="submit">
+              <input type="text" id="donation-for-feni" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <button id="donate-feni" class="btn btn-primary btn-block text-xl">Donate Now</button>
+              <!-- <input class="btn btn-primary btn-block" type="submit"> -->
             </form>
           </div>
         </div>
@@ -81,13 +83,14 @@
           </div>
           <div class="flex flex-col justify-between gap-4">
             <div class="flex flex-col gap-4">
-              <button class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
+              <button id="donated-for-injured" class="btn w-fit"><img src="./assets/icons/coin.png" height="24px" alt="">00 BDT</button>
               <h6 class="text-xl font-bold">Aid for Injured in the Quota Movement</h6>
               <p class="text-base-content">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
             </div>
             <form class="w-full flex flex-col gap-2" action="">
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-              <input class="btn btn-primary btn-block" type="submit">
+              <input type="text" id="aid-for-injured" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+              <button id="donate-injured" class="btn btn-primary btn-block text-xl">Donate Now</button>
+              <!-- <input class="btn btn-primary btn-block" type="submit"> -->
             </form>
           </div>
         </div>

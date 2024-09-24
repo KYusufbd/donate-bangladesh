@@ -7,7 +7,8 @@ module.exports = {
     },
 
     fontSize: {
-      '5xl': '48px'
+      '5xl': '48px',
+      'xl': '20px'
     },
     
     extend: {
