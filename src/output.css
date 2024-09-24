@@ -3322,6 +3322,11 @@ details.collapse summary::-webkit-details-marker {
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mr-24 {
   margin-right: 6rem;
 }
@@ -3393,6 +3398,10 @@ details.collapse summary::-webkit-details-marker {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
