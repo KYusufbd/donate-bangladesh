@@ -1,5 +1,10 @@
-// Input Amounts
+// Project names
+const noakhaliProject = document.getElementById('noakhali-project').innerText;
+const feniProject = document.getElementById('feni-project').innerText;
+const injuredAidProject = document.getElementById('injured-aid-project').innerText;
 
+
+// Input Amounts
 const donationForNoaKhali = document.getElementById('donation-for-noakhali');
 const donationForFeni = document.getElementById('donation-for-feni');
 const aidForInjured = document.getElementById('aid-for-injured');
@@ -22,7 +27,7 @@ const donatedFeni = document.getElementById('donated-feni');
 const donatedForInjured = document.getElementById('donated-for-injured');
 
 // Donate Now function
-function donateNow(input, totalDonated) {
+function donateNow(input, totalDonated, projectName) {
     const balanceDisplay = document.getElementById('current-balance');
     const balanceAmount = parseFloat(document.getElementById('current-balance').innerText);
     const inputAmount = parseFloat(input.value);
@@ -43,7 +48,16 @@ function donateNow(input, totalDonated) {
         const newAmount = (parseFloat(donatedAmount) + parseFloat(inputAmount));
         totalDonated.innerText = `${newAmount.toFixed(2)} BDT`;
         input.value = '';
-    }
+
+        // Code for history record
+        const date = new Date;
+        const pastHistory = historySection.innerHTML;
+        historySection.innerHTML = `
+        <div class="gap-8 p-8 border rounded-xl">
+              <h6 class="text-xl font-bold">${newAmount} Taka is Donated for ${projectName}</h6>
+              <p class="text-base font-light">Date : ${date}</p>
+        </div>` + pastHistory;
+    };
 };
 
 // Page routing function - Working well
@@ -71,19 +85,19 @@ donationPageButton.addEventListener("click", function() {
 // Donate for Noakhali button
 donateNoakhali.addEventListener('click', function(event) {
     event.preventDefault();
-    donateNow(donationForNoaKhali, donatedNoakhali);
+    donateNow(donationForNoaKhali, donatedNoakhali, noakhaliProject);
 });
 
 // Donate for Feni button
 donateFeni.addEventListener('click', function(event) {
     event.preventDefault();
-    donateNow(donationForFeni, donatedFeni);
+    donateNow(donationForFeni, donatedFeni, feniProject);
 });
 
 // Donate for injured in quota movement button
 donateInjured.addEventListener('click', function(event) {
     event.preventDefault();
-    donateNow(aidForInjured, donatedForInjured);
+    donateNow(aidForInjured, donatedForInjured, injuredAidProject);
 });
 
 
