@@ -25,9 +25,9 @@ const donatedForInjured = document.getElementById('donated-for-injured');
 function donateNow(input, totalDonated) {
     const balanceDisplay = document.getElementById('current-balance');
     const balanceAmount = parseFloat(document.getElementById('current-balance').innerText);
-    const inputAmount = input.value;
+    const inputAmount = parseFloat(input.value);
     
-    if (!typeof(inputAmount) == "number" || inputAmount < 1) {
+    if (isNaN(inputAmount) || inputAmount < 1) {
         alert('Please input a valid number!');
     }
 
