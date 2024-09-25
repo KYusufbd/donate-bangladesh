@@ -57,6 +57,9 @@ function donateNow(input, totalDonated, projectName) {
               <h6 class="text-xl font-bold">${newAmount} Taka is Donated for ${projectName}</h6>
               <p class="text-base font-light">Date : ${date}</p>
         </div>` + pastHistory;
+
+        // Code for showing modal
+        document.getElementById('my_modal_3').showModal();
     };
 };
 
